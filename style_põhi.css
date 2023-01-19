@@ -1,0 +1,54 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("pildid/taustapilt.webp");
+    
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    text-align: left;
+    width:100%;
+    background-image: url(pildid/header.jpg);
+}
+
+.menu{
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+    text-align: right;
+    font-size: 32px;
+    right:20px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu a:hover{
+    color: rgb(138, 0, 0);
+}
+
+.menu a:visited{
+    color:black;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(138, 0, 0);
+    text-align: right;
+    
+    
+    
+}
+
+.jalusetekst{
+    position: relative;
+    font-weight: bold;
+    right: 100px;
+    color: white;
+}
+
+h1{
+    font-weight: bold;
+}
