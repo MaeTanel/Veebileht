@@ -1,0 +1,34 @@
+.tanel img{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 410px;
+    height:382px;
+}
+
+.tanelitut{
+    left: 500px;
+    top: 220px;
+    position: absolute;
+    bottom: 500px;
+}
+
+.sotsmed{
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+}
+
+.richard img{
+    position: absolute;
+    top: 520px;
+    left: 50px;
+    width: 400px;
+    height: 462px;
+}
+
+.richarditut{
+    left: 500px;
+    top:620px;
+    position: absolute;
+}

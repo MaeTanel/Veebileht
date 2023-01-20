@@ -1,0 +1,64 @@
+table{
+    width: 30%;
+    background-color: rgb(204, 204, 204);
+}
+
+th{
+    background-color:rgb(138, 0, 0);
+    color: rgb(226, 225, 225);
+}
+
+td{
+    text-align: center;
+
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+input{
+    width:100px;
+    text-align: right;
+}
+
+.pilt{
+    position:absolute;
+    right:15px;
+    top: 428px;
+    width: 45%;
+}
+
+.osakaal{
+    width: 50%;
+}
+
+.tabel{
+    position:absolute;
+    top: 150px;
+    width: 100%;
+    left: 100px;
+}
+
+.tabel2{
+    position:absolute;
+    top: 150px;
+    width: 100%;
+    left: 700px;
+}
+
+.tabel3{
+    position:absolute;
+    top: 350px;
+    width: 100%;
+    left: 700px;
+}
+
+.kokkuVärv{
+    background-color: rgba(97, 231, 97, 0.4)
+}
+
+.sisestus{
+    position:absolute;
+    top: 100px;
+    left: 100px;
+}

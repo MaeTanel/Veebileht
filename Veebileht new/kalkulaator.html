@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    
+
+
+
+
+<head>
+    <title>Pealkiri</title>
+    <link rel="stylesheet" type="text/css" href="style_põhi.css">
+    <link rel="stylesheet" type="text/css" href="style_kalkulaator.css">
+    <meta charset="utf-8">
+
+
+</head>
+<body>
+    <div class="header">
+        <h1>Üks väga lahe eelarveleht</h1>
+        <div class="menu">
+            <a href="avaleht.html">Avaleht</a>
+            <a href="kalkulaator.html">Kalkulaator</a>
+            <a href="uuri_lisaks.html">Huvitavat lugemist</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+    </div>
+    <div class="kirjeldus">
+        <h3>Sisesta siia oma kulud:</h3>
+        <label for="Kategooria"></label>
+        <select name="Kategooria" id="Kategooria">
+            <option value="Eluase">Eluase</option>
+            <option value="Kommunaalid">Kommunaalid</option>
+            <option value="Söök">Söök</option>
+            <option value="Transport">Transport</option>
+            <option value="Meelelahutus">Meelelahutus</option>
+            <option value="Reisifond">Reisifond</option>
+            <option value="Meelerahufond">Meelerahufond</option>
+            <option value="Investeerimine">Investeerimine</option>
+            <option value="Muu">Muu</option>
+        </select>
+        <input type="text" id="kirjeldus" value="" placeholder="Kirjeldus">
+        <input type="text" id="summa" value="" placeholder="Summa">
+        <button type="button" onclick="lisa()">Lisa</button>
+        
+    </div>
+    <br>
+    <div class="vasak">
+        <table id='kulud'>
+            <tr>
+                <th>Kategooria</th>
+                <th>Kirjeldus</th>
+                <th>Summa</th>
+                <th>Kuupäev</th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div class="parem">
+        <table>
+            <tr>
+                <th>Kategooria</th>
+                <th>Raha kulunud</th>
+                <th>Võib veel kulutada</th>
+                <th>Kulutamata osa</th>
+            </tr>
+            <tr>
+                <td>Eluase</td>
+                <td id="eluase_kulunud"></td>
+                <td id="eluase_kulutada"></td>
+                <td id="eluase_graafik"></td>
+            </tr>
+            <tr>
+                <td>Kommunaalid</td>
+                <td id="kommunaalid_kulunud"></td>
+                <td id="kommunaalid_kulutada"></td>
+                <td id="kommunaalid_graafik"></td>
+            </tr>
+            <tr>
+                <td>Söök</td>
+                <td id="söök_kulunud"></td>
+                <td id="söök_kulutada"></td>
+                <td id="söök_graafik"></td>
+            </tr>
+            <tr>
+                <td>Transport</td>
+                <td id="transport_kulunud"></td>
+                <td id="transport_kulutada"></td>
+                <td id="transport_graafik"></td>
+            </tr>
+            <tr>
+                <td>Meelelahutus</td>
+                <td id="meelelahutus_kulunud"></td>
+                <td id="meelelahutus_kulutada"></td>
+                <td id="meelelahutus_graafik"></td>
+            </tr>
+            <tr>
+                <td>Reisifond</td>
+                <td id="reisifond_kulunud"></td>
+                <td id="reisifond_kulutada"></td>
+                <td id="reisifond_graafik"></td>
+            </tr>
+            <tr>
+                <td>Meelerahufond</td>
+                <td id="meelerahu_kulunud"></td>
+                <td id="meelerahu_kulutada"></td>
+                <td id="meelerahu_graafik"></td>
+            </tr>
+            <tr>
+                <td>Investeerimine</td>
+                <td id="invest_kulunud"></td>
+                <td id="invest_kulutada"></td>
+                <td id="invest_graafik"></td>
+            </tr>
+            <tr>
+                <td>Muu</td>
+                <td id="muu_kulunud"></td>
+                <td id="muu_kulutada"></td>
+                <td id="muu_graafik"></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p class="jalusetekst">Lehekülg valmis Euroopa Liidu rahade toel</p>
+    </footer>
+
+    <script src="kalkulaator_script.js"></script>
+
+</body>
+</html>

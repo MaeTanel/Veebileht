@@ -1,0 +1,32 @@
+.paigutus_left{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 40%;
+}
+
+.paigutus_right{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 40%;
+}
+
+.pilt_left{
+    width:600px;
+    height:300px;
+}
+
+.pilt_right{
+
+}
+
+.lingid{
+    color:black;
+    font-weight: bold;
+    font-style: normal;    
+}
+
+.lingid:hover{
+    color: rgb(138, 0, 0);
+}

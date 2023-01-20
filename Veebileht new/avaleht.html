@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    
+
+
+
+
+<head>
+    <title>Pealkiri</title>
+    <link rel="stylesheet" type="text/css" href="style_põhi.css">
+    <link rel="stylesheet" type="text/css" href="style_avaleht.css">
+    <meta charset="utf-8">
+
+
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Üks väga lahe eelarveleht</h1>
+        </div>
+        <div class="menu">
+            <a href="avaleht.html">Avaleht</a>
+            <a href="kalkulaator.html">Kalkulaator</a>
+            <a href="uuri_lisaks.html">Huvitavat lugemist</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+    </div>
+
+    <div class="tabel">
+        <table>
+            <tr>
+                <th>Kuluallikas</th>
+                <th>Kulud (eurodes)</th>
+            </tr>
+            <tr>
+                <td>Eluase</td>
+                <td class="osakaal"><input type="number" id="eluase" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Kommunaalid</td>
+                <td class="osakaal"><input type="number" id="kommunaalid" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Söök</td>
+                <td class="osakaal"><input type="number" id="söök" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Transport</td>
+                <td class="osakaal"><input type="number" id="transport" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Meelelahutus</td>
+                <td class="osakaal"><input type="number" id="meelelahutus" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Reisifond</td>
+                <td class="osakaal"><input type="number" id="reisifond" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Meelerahufond</td>
+                <td class="osakaal"><input type="number" id="meelerahufond" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Investeerimine</td>
+                <td class="osakaal"><input type="number" id="investeerimine" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Muu</td>
+                <td class="osakaal"><input type="number" id="muu" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td class="kokkuVärv">Kokku</td>
+                <td class="kokkuVärv" class="osakaal"><input type="text" id="kulud_kokku" disabled></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="tabel2">
+        <table>
+            <tr>
+                <th style="background-color: rgb(52, 154, 188)">Tulude liik</th>
+                <th style="background-color:rgb(52, 154, 188)">Tulud (eurodes)</th>
+            </tr>
+            <tr>
+                <td>Palk</td>
+                <td class="osakaal"><input type="number" id="palk" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Dividendid</td>
+                <td class="osakaal"><input type="number" id="dividendid" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td>Toetused</td>
+                <td class="osakaal"><input type="number" id="toetused" oninput="sum_kulud()"></td>
+            </tr>
+                <td>Muu</td>
+                <td class="osakaal"><input type="number" id="muu_tulud" oninput="sum_kulud()"></td>
+            </tr>
+            <tr>
+                <td class="kokkuVärv">Kokku</td>
+                <td class="kokkuVärv" class="osakaal"><input type="text" id="tulud_kokku" disabled></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="tabel3">
+        <table>
+            <tr>
+                <th class="osakaal" style="background-color: rgba(255, 143, 57, 0.442)">Raha jääk</th>
+                <th style="background-color: rgba(255, 143, 57, 0.56)"><input type="text" id="raha_alles" disabled></th>
+            </tr>
+        </table>
+    </div>
+
+    <img class="pilt" src="pildid/rahajaotus.jpg" alt="Rahajaotus">
+    <footer class="footer">
+        <p class="jalusetekst">Lehekülg valmis Euroopa Liidu rahade toel</p>
+    </footer>
+    <script src="avaleht_script.js"></script>
+</body>
+</html>
